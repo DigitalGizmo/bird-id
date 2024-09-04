@@ -1,0 +1,199 @@
+body {
+	padding: 0;
+	margin: 0;
+  font-family: "Noto Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100 900;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+header.top {
+	background-color: black;
+	height: 10vh;
+	display: grid;
+	grid-template-columns: 30% 30% 30%;
+	grid-template-rows: 1;
+	grid-gap: 3%;
+}
+
+header.top h1 {
+	color: #FFB802;
+	font-weight: 200;
+	font-size: 3.5em;
+	font-stretch: 55%;
+	text-transform: uppercase;
+	margin: 0;
+	padding: 0 0 0 10px;
+	grid-column: 1;
+}
+
+header.top h2 {
+	font-weight: 200;
+	font-size: 1.25em;
+	color: #FFF;
+	margin: 0;
+	padding-top: 20px;
+	grid-column: 2;
+}
+
+header.top div.view-sort {
+	color: #FFF;
+	grid-column: 3;
+}
+
+header.top a {
+	color: #FFB802;
+}
+
+/* ----- MENUS ------- */
+main.photo-menu div img {
+	max-width: 100%;
+	height: auto;
+}
+
+svg g#hotspots .hotspot {
+  fill: #ff9700;
+  opacity: .3;
+  stroke-width: 0px;
+}
+
+main.grid-menu nav ul {
+	display: grid;
+	grid-template-columns: 25% 25% 25% 25%;
+	grid-gap: 0;
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+}
+
+li.grid-menu-item {
+	position: relative;
+	line-height: 0;
+}
+
+li.grid-menu-item a img {
+	max-width: 100%;
+	aspect-ratio: 1;
+}
+
+li.grid-menu-item h3 {
+  background-color: rgba(0, 0, 0, .65);
+  bottom: 0;
+  color: white;
+  font-size: 1em;
+  font-weight: 400;
+  left: 0;
+  margin: 0;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  line-height: 1.8em;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+
+/* ----- DETAIL PAGE ------ */
+main.detail header {
+	padding: 0 1em .5em 1em;
+}
+
+main.detail header h1 {
+	color: #E4A400;
+	font-size: 3em;
+	font-weight: 300;
+	margin: 0;
+}
+
+main.detail header h2 {
+	font-size: 1.5em;
+	color: #333;
+	font-weight: 200;
+	font-style: italic;
+	margin: 0;
+}
+
+div.full-view img {
+	max-width: 100% ;
+}
+
+div.info {
+	display: grid;
+	grid-template-columns: 50% 50%;
+	grid-gap: 20px;
+	padding: 1em;
+}
+
+div.info article {
+	grid-column: 1;
+	font-size: 1.5em;
+}
+
+div.info article p {
+	margin-top: 0;
+}
+
+div.info section {
+	grid-column: 2;
+}
+
+ul.images, ul.facts, ul.behavior {
+	list-style-type: none;
+	padding: 0;
+}
+
+ul.images li {
+	display: inline-block;
+}
+
+ul.images li img {
+	height: 100px;
+}
+
+dl.facts {
+	line-height: 1.5em;
+}
+
+dl.facts dt {
+	color: #FFB802;
+	float: left;
+	text-transform: uppercase;
+	width: 60px;
+}
+
+dl.facts dd {
+	margin-left: 70px;
+}
+
+ul.behavior li {
+	margin-bottom: .5em;
+  padding: 0px 0px 0px 66px;
+  height: 60px;
+}
+
+ul.behavior li.habitat {
+  background: url(images/icons/forest.png) no-repeat left top;
+  background-size: 60px 60px;
+}
+ul.behavior li.habitat::before {
+	content: 'HABITAT: ';
+	color: #FFB802;
+}
+
+ul.behavior li.food {
+  background: url(images/icons/insects.png) no-repeat left top;
+  background-size: 60px 60px;
+}
+ul.behavior li.food::before {
+	content: 'FOOD: ';
+	color: #FFB802;
+}
+
+ul.behavior li.nest {
+  background: url(images/icons/tree-nest.png) no-repeat left top;
+  background-size: 60px 60px;
+}
+ul.behavior li.nest::before {
+	content: 'NEST: ';
+	color: #FFB802;
+}
