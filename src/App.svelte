@@ -8,6 +8,9 @@
   let detailSlug = 'americanredstart';
   let imageIdx = 0;
 
+  // const assetPath = "https://assets.digitalgizmo.com/bird-id/";
+  const assetPath = "";
+
   function setView(_view, _slug = 'bluejay', _imageIdx = 0) {
     detailSlug = _slug;
     setImageIdx(_imageIdx);
@@ -39,14 +42,17 @@
 </header>
 {#if view === 'grid'}
   <Grid 
+    assetPath = {assetPath}
     setView = {setView}
   />
 {:else if view === 'photo'}
   <Photo 
+    assetPath = {assetPath}
     setView = {setView}
   />
 {:else if view === 'detail'}
   <Detail 
+    assetPath = {assetPath}
     detailSlug = {detailSlug}
     imageIdx = {imageIdx}
     setImageIdx = {setImageIdx}

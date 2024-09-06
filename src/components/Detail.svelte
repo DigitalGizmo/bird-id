@@ -1,9 +1,10 @@
 <script>
+  export let assetPath;
   export let detailSlug;
   export let imageIdx;
   export let setImageIdx;
 
-  let audio = new Audio('https://assets.digitalgizmo.com/bird-id/audio/' + detailSlug + '.mp3')
+  let audio = new Audio(assetPath + 'audio/' + detailSlug + '.mp3')
 
   function playSound() {
     audio.play();
@@ -17,14 +18,14 @@
   </header>
 
   <div class="full-view">
-    <img src="https://assets.digitalgizmo.com/bird-id/images/full-pics/{detailSlug}-{imageIdx}.jpg"
+    <img src="{assetPath}images/full-pics/{detailSlug}-{imageIdx}.jpg"
     alt="bird name">
   </div>
 
   <div class="info">
     <article>
       <a href="/" on:click={(e) => { e.preventDefault(); playSound();}}>
-        <img src="https://assets.digitalgizmo.com/bird-id/icons/forest.png"
+        <img src="{assetPath}icons/forest.png"
         alt="bird song">
         Listen
       </a>      
@@ -35,19 +36,19 @@
       <ul class="images">
         <li>
           <a href="/" on:click={(e) => { e.preventDefault(); setImageIdx(0);}}>
-            <img src="https://assets.digitalgizmo.com/bird-id/images/menu-pics/{detailSlug}-0.jpg"
+            <img src="{assetPath}images/menu-pics/{detailSlug}-0.jpg"
             alt="bird name">
           </a>
         </li>
         <li>
           <a href="/" on:click={(e) => { e.preventDefault(); setImageIdx(1);}}>
-            <img src="https://assets.digitalgizmo.com/bird-id/images/menu-pics/{detailSlug}-1.jpg"
+            <img src="{assetPath}images/menu-pics/{detailSlug}-1.jpg"
           alt="bird name">
             </a>
         </li>
         <li>
           <a href="/" on:click={(e) => { e.preventDefault(); setImageIdx(2);}}>
-            <img src="https://assets.digitalgizmo.com/bird-id/images/menu-pics/{detailSlug}-2.jpg"
+            <img src="{assetPath}images/menu-pics/{detailSlug}-2.jpg"
           alt="bird name">
           </a>
         </li>

@@ -1,4 +1,5 @@
 <script>
+  export let assetPath;
   export let setView;
 </script>
 
@@ -9,7 +10,7 @@
     
       <g id="photo">
         <image width="1024" height="1366" 
-        href="https://assets.digitalgizmo.com/bird-id/images/menu-pics/bird-case-exploded.jpg"/>
+        href="{assetPath}images/menu-pics/bird-case-exploded.jpg"/>
       </g>
     
       <g id="hotspots">
