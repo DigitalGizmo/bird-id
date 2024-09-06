@@ -172,7 +172,7 @@ ul.behavior li {
 }
 
 ul.behavior li.habitat {
-  background: url(images/icons/forest.png) no-repeat left top;
+  background: url(icons/forest.png) no-repeat left top;
   background-size: 60px 60px;
 }
 ul.behavior li.habitat::before {
@@ -181,7 +181,7 @@ ul.behavior li.habitat::before {
 }
 
 ul.behavior li.food {
-  background: url(images/icons/insects.png) no-repeat left top;
+  background: url(icons/insects.png) no-repeat left top;
   background-size: 60px 60px;
 }
 ul.behavior li.food::before {
@@ -190,7 +190,7 @@ ul.behavior li.food::before {
 }
 
 ul.behavior li.nest {
-  background: url(images/icons/tree-nest.png) no-repeat left top;
+  background: url(icons/tree-nest.png) no-repeat left top;
   background-size: 60px 60px;
 }
 ul.behavior li.nest::before {

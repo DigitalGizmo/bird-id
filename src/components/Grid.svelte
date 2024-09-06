@@ -6,16 +6,17 @@
   <nav>
     <ul>
       <li class="grid-menu-item">
-        <a href="/">
-          <img src="https://assets.digitalgizmo.com/bird-id/images/menu-pics/barnowl.jpg" alt="">
+        <a href="/"
+          on:click={(e) => { e.preventDefault(); setView('detail', 'barn-owl', 1);}}>
+        <img src="https://assets.digitalgizmo.com/bird-id/images/menu-pics/barn-owl-1.jpg" alt="">
           <h3>Barn Owl</h3>
         </a>
       </li>
       <li class="grid-menu-item">
         <a href="/"
-          on:click={(e) => { e.preventDefault(); setView('detail', 'americanredstart');}}>
-          <img src="https://assets.digitalgizmo.com/bird-id/images/menu-pics/americanredstart.jpg" alt="">
-          <h3>American Redstart</h3>
+          on:click={(e) => { e.preventDefault(); setView('detail', 'blackburnian-warbler', 1);}}>
+          <img src="https://assets.digitalgizmo.com/bird-id/images/menu-pics/blackburnian-warbler-1.jpg" alt="">
+          <h3>Blackburnian Warbler</h3>
         </a>
       </li>
       <li class="grid-menu-item">

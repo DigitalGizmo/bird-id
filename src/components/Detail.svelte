@@ -1,15 +1,17 @@
 <script>
   export let detailSlug;
+  export let imageIdx;
+  export let setImageIdx;
 </script>
 
 <main class="detail">
   <header>
     <h1>American Redstart</h1>
-    <h2>Setophaga ruticilla {detailSlug}</h2>
+    <h2>Setophaga ruticilla {detailSlug} idx: {imageIdx}</h2>
   </header>
 
   <div class="full-view">
-    <img src="https://assets.digitalgizmo.com/bird-id/images/full-pics/{detailSlug}1.jpg"
+    <img src="https://assets.digitalgizmo.com/bird-id/images/full-pics/{detailSlug}-{imageIdx}.jpg"
     alt="bird name">
   </div>
 
@@ -21,14 +23,23 @@
 
     <section>
       <ul class="images">
-        <li><img src="https://assets.digitalgizmo.com/bird-id/images/thm-pics/americanredstart2.jpg"
-          alt="bird name">
+        <li>
+          <a href="/" on:click={(e) => { e.preventDefault(); setImageIdx(0);}}>
+            <img src="https://assets.digitalgizmo.com/bird-id/images/menu-pics/{detailSlug}-0.jpg"
+            alt="bird name">
+          </a>
         </li>
-        <li><img src="https://assets.digitalgizmo.com/bird-id/images/thm-pics/americanredstart3.jpg"
+        <li>
+          <a href="/" on:click={(e) => { e.preventDefault(); setImageIdx(1);}}>
+            <img src="https://assets.digitalgizmo.com/bird-id/images/menu-pics/{detailSlug}-1.jpg"
           alt="bird name">
+            </a>
         </li>
-        <li><img src="https://assets.digitalgizmo.com/bird-id/images/thm-pics/americanredstart1.jpg"
+        <li>
+          <a href="/" on:click={(e) => { e.preventDefault(); setImageIdx(2);}}>
+            <img src="https://assets.digitalgizmo.com/bird-id/images/menu-pics/{detailSlug}-2.jpg"
           alt="bird name">
+          </a>
         </li>
       </ul>
 

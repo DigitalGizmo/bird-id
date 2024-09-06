@@ -6,10 +6,17 @@
 
   let view = 'photo';
   let detailSlug = 'americanredstart';
+  let imageIdx = 0;
 
-  function setView(_view, _slug = 'bluejay') {
+  function setView(_view, _slug = 'bluejay', _imageIdx = 0) {
     detailSlug = _slug;
+    setImageIdx(_imageIdx);
     view = _view;
+  }
+
+  function setImageIdx(_idx) {
+    imageIdx = _idx;
+    // console.log(' setting idx to: ' + imageIdx);
   }
 
 </script>
@@ -23,7 +30,7 @@
     <a href="/" on:click={(e) => { e.preventDefault(); setView('photo');}}>
       Photo</a> | 
     <a href="/" on:click={(e) => { e.preventDefault(); setView('grid');}}>
-    Grid </a>
+      Grid </a>
   </p>
   {#if view === 'grid'}
     <p>Sort by: Name | Size | Color</p>
@@ -35,10 +42,14 @@
     setView = {setView}
   />
 {:else if view === 'photo'}
-  <Photo />
+  <Photo 
+    setView = {setView}
+  />
 {:else if view === 'detail'}
   <Detail 
     detailSlug = {detailSlug}
+    imageIdx = {imageIdx}
+    setImageIdx = {setImageIdx}
   />
 {/if}
 
