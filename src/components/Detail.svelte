@@ -2,6 +2,12 @@
   export let detailSlug;
   export let imageIdx;
   export let setImageIdx;
+
+  let audio = new Audio('https://assets.digitalgizmo.com/bird-id/audio/' + detailSlug + '.mp3')
+
+  function playSound() {
+    audio.play();
+  }
 </script>
 
 <main class="detail">
@@ -17,7 +23,11 @@
 
   <div class="info">
     <article>
-      <audio></audio>
+      <a href="/" on:click={(e) => { e.preventDefault(); playSound();}}>
+        <img src="https://assets.digitalgizmo.com/bird-id/icons/forest.png"
+        alt="bird song">
+        Listen
+      </a>      
       <p>American Redstarts are always on the move and almost seem hyperactive as they dash through trees after insects, rapidly spreading and closing their tails to startle and flush out possible prey.</p>
     </article>
 
