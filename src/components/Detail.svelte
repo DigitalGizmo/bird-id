@@ -3,8 +3,10 @@
   export let detailSlug;
   export let imageIdx;
   export let setImageIdx;
+  export let content;
 
   let audio = new Audio(assetPath + 'audio/' + detailSlug + '.mp3')
+  let detailContent = content.find((element) => element.slug === detailSlug);
 
   function playSound() {
     audio.play();
@@ -13,8 +15,8 @@
 
 <main class="detail">
   <header>
-    <h1>American Redstart</h1>
-    <h2>Setophaga ruticilla {detailSlug} idx: {imageIdx}</h2>
+    <h1>{detailContent.title}</h1>
+    <h2>{detailContent.sciName}</h2>
   </header>
 
   <div class="full-view">
@@ -25,11 +27,11 @@
   <div class="info">
     <article>
       <a href="/" on:click={(e) => { e.preventDefault(); playSound();}}>
-        <img src="{assetPath}icons/forest.png"
+        <img class="audio" src="{assetPath}icons/audio-icon.png"
         alt="bird song">
         Listen
       </a>      
-      <p>American Redstarts are always on the move and almost seem hyperactive as they dash through trees after insects, rapidly spreading and closing their tails to startle and flush out possible prey.</p>
+      <p>{detailContent.description}</p>
     </article>
 
     <section>
@@ -53,6 +55,11 @@
           </a>
         </li>
       </ul>
+      <ul class="behavior">
+        <li class="habitat">Forest</li>
+        <li class="food">Insects</li>
+        <li class="nest">Tree</li>
+      </ul>
 
       <dl class="facts">
         <dt>Order:</dt>
@@ -65,12 +72,13 @@
         <dd>Canada to South America; seen in Maine in summer</dd>
       </dl>
 
-      <ul class="behavior">
-        <li class="habitat">Forest</li>
-        <li class="food">Insects</li>
-        <li class="nest">Tree</li>
-      </ul>
     </section>
 
   </div><!--/detail-info--->
 </main>
+
+<style>
+  .audio {
+    width: 60px;
+  }
+</style>

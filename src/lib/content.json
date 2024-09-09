@@ -1,0 +1,57 @@
+[
+  {
+    "slug": "barn-owl",
+    "title": "Barn Owl",
+    "sciName": "Tyto alba",
+    "labelPos": {"x": 535, "y": 332},
+    "description": "Barn Owls can locate prey by sound alone and can catch mice in complete darkness. ",
+    "habitat": "Forest",
+    "food": "Insects",
+    "nest": "Tree",
+    "range": "Nearly worldwide, the barn owl can be found in Australia, Asia, the Middle East, Africa, and Europe, as well as North and South America."
+  },
+  {
+    "slug": "blackburnian-warbler",
+    "title": "Blackburnian Warbler",
+    "sciName": "Dendroica fusca",
+    "labelPos": {"x": 343, "y": 1256},
+    "description": "Male Blackburnian Warblers fiercely defend their territory, quickly chasing intruding male Blackburnains through and around the treetops and performing aerobatic displays like flying in loops and plummeting downward through the branches.",
+    "habitat": "Forest",
+    "food": "Insects",
+    "nest": "Tree",
+    "range": "The Blackburnian Warbler wide range that includes breeding grounds in northeastern North America and wintering grounds in Central and South America"
+  },
+  {
+    "slug": "common-raven",
+    "title": "Common Raven",
+    "sciName": "Corvus corax",
+    "labelPos": {"x": 338, "y": 457},
+    "description": "Common Ravens are acrobatic fliers. They can be seen doing rolls and somersaults in the air - even flying upside down!",
+    "habitat": "Forest",
+    "food": "Insects",
+    "nest": "Tree",
+    "range": "Ravens are found throughout major portions of North American, Europe, Asia, and North Africa."
+  }, 
+  {
+    "slug": "pileated-woodpecker",
+    "title": "Pileated Woodpecker",
+    "sciName": "Dryocopus pileatus",
+    "labelPos": {"x": 612, "y": 643},
+    "description": "Pileated Woodpecker digs rectangular-shaped holes in trees to find ants. Sometimes, these holes get so large and deep that they can cause small trees to break!",
+    "habitat": "Forest",
+    "food": "Insects",
+    "nest": "Tree",
+    "range": "From northern California up into Canada and back down into much of the eastern U.S."
+  },
+  {
+    "slug": "",
+    "title": "",
+    "sciName": "",
+    "labelPos": {"x": 343, "y": 1256},
+    "description": "",
+    "habitat": "Forest",
+    "food": "Insects",
+    "nest": "Tree",
+    "range": ""
+  }  
+]

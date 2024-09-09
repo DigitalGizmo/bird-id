@@ -2,14 +2,14 @@
   import Grid from './components/Grid.svelte'
   import Photo from './components/Photo.svelte'
   import Detail from './components/Detail.svelte'
-  import Counter from './lib/Counter.svelte'
+  import content from './lib/content.json'
 
   let view = 'photo';
   let detailSlug = 'americanredstart';
   let imageIdx = 0;
 
-  // const assetPath = "https://assets.digitalgizmo.com/bird-id/";
-  const assetPath = "";
+  const assetPath = "https://assets.digitalgizmo.com/bird-id/";
+  // const assetPath = "";
 
   function setView(_view, _slug = 'bluejay', _imageIdx = 0) {
     detailSlug = _slug;
@@ -44,11 +44,13 @@
   <Grid 
     assetPath = {assetPath}
     setView = {setView}
+    content = {content}
   />
 {:else if view === 'photo'}
   <Photo 
     assetPath = {assetPath}
     setView = {setView}
+    content = {content}
   />
 {:else if view === 'detail'}
   <Detail 
@@ -56,6 +58,7 @@
     detailSlug = {detailSlug}
     imageIdx = {imageIdx}
     setImageIdx = {setImageIdx}
+    content = {content}
   />
 {/if}
 
