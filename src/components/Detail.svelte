@@ -69,7 +69,7 @@
         <dt>Size:</dt>
         <dd> 4.3 - 5.1 in (11-13 cm)</dd>
         <dt>Range:</dt>
-        <dd>Canada to South America; seen in Maine in summer</dd>
+        <dd>{detailContent.range}</dd>
       </dl>
 
     </section>
