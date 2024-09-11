@@ -1,6 +1,6 @@
 <script>
   export let detailContent;
-  export let isModalShowing;
+  // export let isModalShowing;
   export let setView;
   export let modalPosition;
 

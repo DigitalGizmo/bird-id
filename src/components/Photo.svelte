@@ -78,7 +78,6 @@
       modalPosition = {modalPosition}
       detailContent = {detailContent}
       setView = {setView}
-      bind:isModalShowing 
     />
   {/if}  
 

@@ -1,7 +1,7 @@
 <script>
   export let assetPath;
   export let setView;
-  // export let content;
+  export let content;
 </script>
 
 <main class="grid-menu">
@@ -11,7 +11,7 @@
         <a href="/"
           on:click={(e) => { e.preventDefault(); setView('detail', 'barn-owl', 1);}}>
         <img src="{assetPath}images/menu-pics/barn-owl-1.jpg" alt="">
-          <h3>Barn Owl</h3>
+          <h3>{content[0].title}</h3>
         </a>
       </li>
       <li class="grid-menu-item">
@@ -36,8 +36,7 @@
         </a>
       </li>
       <li class="grid-menu-item">
-        <a href="/"
-        on:click={(e) => { e.preventDefault(); setView('detail', 'bluejay');}}>
+        <a href="/">
           <img src="{assetPath}images/menu-pics/bluejay.jpg" alt="">
           <h3>Blue Jay</h3>
         </a>
