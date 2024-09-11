@@ -177,17 +177,23 @@ ul.images li img {
 
 .audio {
 	margin: 0;
+	width: 100%;
 }
 
 .audio a img {
-	display: inline;
+	float: left;
+	margin-bottom: .5em;
+	width: 60px;
+}
+
+.audio a {
+	text-decoration: none;
 }
 
 .audio a span {
 	font-weight: 400;
 	color: #e6ad00;
 	text-transform: uppercase;
-	text-decoration: none;
 	margin-left: 6px;
 }
 
@@ -204,6 +210,10 @@ dl.facts dt {
 
 dl.facts dd {
 	margin-left: 70px;
+}
+
+ul.behavior {
+	clear: left;
 }
 
 ul.behavior li {
