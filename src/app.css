@@ -3,9 +3,10 @@ body {
 	margin: 0;
   font-family: "Noto Sans", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 100 900;
+  font-weight: 200;
+/*  font-stretch: 60%;*/
   font-style: normal;
-  font-variation-settings: "wdth" 100;
+  font-variation-settings: "wdth" 87.5;
 }
 
 header.top {
@@ -47,6 +48,8 @@ header.top a {
 }
 
 /* ----- MENUS ------- */
+
+/* PHOTO MENU */
 main.photo-menu div img {
 	max-width: 100%;
 	height: auto;
@@ -58,6 +61,25 @@ svg g#hotspots .hotspot {
   stroke-width: 0px;
 }
 
+.mini-pop {
+  position: absolute;
+  border: 1px solid #333;
+  padding: 12px;
+  width: 240px;
+  height: 80px;
+  background-color: #FFB802;
+}
+
+.mini-pop h3 {
+  margin: 0;
+}
+
+.mini-pop p a {
+  color: white;
+  text-decoration: none;
+}
+
+/* GRID MENU */
 main.grid-menu nav ul {
 	display: grid;
 	grid-template-columns: 25% 25% 25% 25%;
@@ -101,7 +123,7 @@ main.detail header {
 main.detail header h1 {
 	color: #E4A400;
 	font-size: 3em;
-	font-weight: 300;
+	font-weight: 400;
 	margin: 0;
 }
 
@@ -124,9 +146,10 @@ div.info {
 	padding: 1em;
 }
 
-div.info article {
+div.info article {/* image thumbs and description */
 	grid-column: 1;
 	font-size: 1.5em;
+	font-weight: 400;
 }
 
 div.info article p {
@@ -137,9 +160,11 @@ div.info section {
 	grid-column: 2;
 }
 
-ul.images, ul.facts, ul.behavior {
+ul.images, dl.facts, ul.behavior {
 	list-style-type: none;
 	padding: 0;
+	margin: 0 0 .5em 0;
+	font-weight: 400;
 }
 
 ul.images li {
@@ -150,12 +175,28 @@ ul.images li img {
 	height: 100px;
 }
 
+.audio {
+	margin: 0;
+}
+
+.audio a img {
+	display: inline;
+}
+
+.audio a span {
+	font-weight: 400;
+	color: #e6ad00;
+	text-transform: uppercase;
+	text-decoration: none;
+	margin-left: 6px;
+}
+
 dl.facts {
 	line-height: 1.5em;
 }
 
 dl.facts dt {
-	color: #FFB802;
+	color: #e6ad00;
 	float: left;
 	text-transform: uppercase;
 	width: 60px;
@@ -175,25 +216,28 @@ ul.behavior li.habitat {
   background: url(/icons/forest.png) no-repeat left top;
   background-size: 60px 60px;
 }
+
 ul.behavior li.habitat::before {
 	content: 'HABITAT: ';
-	color: #FFB802;
+	color: #e6ad00;
 }
 
 ul.behavior li.food {
   background: url(/icons/insects.png) no-repeat left top;
   background-size: 60px 60px;
 }
+
 ul.behavior li.food::before {
 	content: 'FOOD: ';
-	color: #FFB802;
+	color: #e6ad00;
 }
 
 ul.behavior li.nest {
   background: url(/icons/tree-nest.png) no-repeat left top;
   background-size: 60px 60px;
 }
+
 ul.behavior li.nest::before {
 	content: 'NEST: ';
-	color: #FFB802;
+	color: #e6ad00;
 }

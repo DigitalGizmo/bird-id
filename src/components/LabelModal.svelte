@@ -8,7 +8,7 @@
 
   <div class="mini-pop"
     style="left: {modalPosition.x}px; top: {modalPosition.y}px; ">
-    <p>{detailContent.title}</p>
+    <h3>{detailContent.title}</h3>
     <p>
       <a href="/"
       on:click={(e) => { e.preventDefault(); setView('detail', detailContent.slug, 0);}}>
@@ -16,15 +16,3 @@
     </a>
     </p>
   </div>
-
-<style>
-  .mini-pop {
-    /* top: 20px;
-    left: 100px; */
-    position: absolute;
-    padding: 5px;
-    width: 200px;
-    height: 100px;
-    background-color: yellow;
-  }
-</style>

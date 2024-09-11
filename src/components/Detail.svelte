@@ -26,15 +26,6 @@
 
   <div class="info">
     <article>
-      <a href="/" on:click={(e) => { e.preventDefault(); playSound();}}>
-        <img class="audio" src="{assetPath}icons/audio-icon.png"
-        alt="bird song">
-        Listen
-      </a>      
-      <p>{detailContent.description}</p>
-    </article>
-
-    <section>
       <ul class="images">
         <li>
           <a href="/" on:click={(e) => { e.preventDefault(); setImageIdx(0);}}>
@@ -55,6 +46,21 @@
           </a>
         </li>
       </ul>
+
+      <p>{detailContent.description}</p>
+    </article>
+
+    <section>
+      <div class="audio">
+        <a href="/" on:click={(e) => { e.preventDefault(); playSound();}}>
+          <img class="audio" src="{assetPath}icons/audio-icon.png"
+          alt="bird song">
+        </a>
+        <a href="/" on:click={(e) => { e.preventDefault(); playSound();}}>
+          <span class="">Listen</span>
+        </a>
+      </div>
+
       <ul class="behavior">
         <li class="habitat">Forest</li>
         <li class="food">Insects</li>
