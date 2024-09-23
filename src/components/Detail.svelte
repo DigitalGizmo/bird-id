@@ -60,18 +60,18 @@
       </div>
 
       <ul class="behavior">
-        <li class="habitat">Forest</li>
-        <li class="food">Insects</li>
-        <li class="nest">Tree</li>
+        <li class="habitat">{detailContent.habitat}</li>
+        <li class="food">{detailContent.food}</li>
+        <li class="nest">{detailContent.nest}</li>
       </ul>
 
       <dl class="facts">
         <dt>Order:</dt>
-        <dd>Passeriformes</dd>
+        <dd>{detailContent.order}</dd>
         <dt>Family:</dt>
-        <dd>Parulidae</dd>
+        <dd>{detailContent.family}</dd>
         <dt>Size:</dt>
-        <dd> 4.3 - 5.1 in (11-13 cm)</dd>
+        <dd>{detailContent.sizeDescription}</dd>
         <dt>Range:</dt>
         <dd>{detailContent.range}</dd>
       </dl>

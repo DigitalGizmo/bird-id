@@ -4,11 +4,16 @@
     "title": "Barn Owl",
     "sciName": "Tyto alba",
     "labelPos": {"x": 535, "y": 332},
-    "description": "Barn Owls can locate prey by sound alone and can catch mice in complete darkness. ",
-    "habitat": "Forest",
-    "food": "Insects",
-    "nest": "Tree",
-    "range": "Nearly worldwide, the barn owl can be found in Australia, Asia, the Middle East, Africa, and Europe, as well as North and South America."
+    "description": "Barn Owls can locate prey by sound alone and can catch mice in complete darkness.",
+    "habitat": "Grasslands",
+    "food": "Mammals",
+    "nest": "Building",
+    "order": "Stringiformes",
+    "family": "Tytonidae",
+    "sizeDescription": "9-12\" (23-30 cm)",
+    "sizeOrdinal": "21",
+    "colorOrdianl": "",
+    "range": "Nearly worldwide"
   },
   {
     "slug": "blackburnian-warbler",
@@ -19,6 +24,11 @@
     "habitat": "Forest",
     "food": "Insects",
     "nest": "Tree",
+    "order": "Passeriformes",
+    "family": "Parulidae",
+    "sizeDescription": "5\" (13 cm)",
+    "sizeOrdinal": "4",
+    "colorOrdianl": "",
     "range": "The Blackburnian Warbler wide range that includes breeding grounds in northeastern North America and wintering grounds in Central and South America"
   },
   {
@@ -28,9 +38,14 @@
     "labelPos": {"x": 338, "y": 457},
     "description": "Common Ravens are acrobatic fliers. They can be seen doing rolls and somersaults in the air - even flying upside down!",
     "habitat": "Forest",
-    "food": "Insects",
-    "nest": "Tree",
-    "range": "Ravens are found throughout major portions of North American, Europe, Asia, and North Africa."
+    "food": "Omnivore",
+    "nest": "Cliff",
+    "order": "Passeriformes",
+    "family": "Corvidae",
+    "sizeDescription": "21-27\" (53-69 cm)",
+    "sizeOrdinal": "34",
+    "colorOrdianl": "",
+    "range": "Nearly worldwide"
   }, 
   {
     "slug": "pileated-woodpecker",
@@ -40,8 +55,13 @@
     "description": "Pileated Woodpecker digs rectangular-shaped holes in trees to find ants. Sometimes, these holes get so large and deep that they can cause small trees to break!",
     "habitat": "Forest",
     "food": "Insects",
-    "nest": "Tree",
-    "range": "From northern California up into Canada and back down into much of the eastern U.S."
+    "nest": "Cavity",
+    "order": "Piciformes",
+    "family": "Picidae",
+    "sizeDescription": "17\" (43 cm)",
+    "sizeOrdinal": "31",
+    "colorOrdianl": "",
+    "range": "Northern Canada and much of the United States"
   },
   {
     "slug": "",
@@ -52,6 +72,11 @@
     "habitat": "Forest",
     "food": "Insects",
     "nest": "Tree",
+    "order": "",
+    "family": "",
+    "sizeDescription": "",
+    "sizeOrdinal": "",
+    "colorOrdianl": "",
     "range": ""
   }  
 ]
