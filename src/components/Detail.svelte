@@ -53,7 +53,7 @@
     <section>
       <div class="audio">
         <a href="/" on:click={(e) => { e.preventDefault(); playSound();}}>
-          <img class="audio" src="{assetPath}icons/audio-icon.png"
+          <img src="{assetPath}icons/audio-icon.png"
           alt="bird song">
           <span class="">Listen</span>
         </a>
