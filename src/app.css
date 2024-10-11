@@ -49,6 +49,10 @@ header.top a {
 /* ----- MENUS ------- */
 
 /* PHOTO MENU */
+.photo-menu{
+  position: relative;
+}
+
 main.photo-menu div img {
 	max-width: 100%;
 	height: auto;
