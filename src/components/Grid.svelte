@@ -35,9 +35,19 @@
           <h3>Pileated Woodpecker</h3>
         </a>
       </li>
+      {#each content as bird}
+        <li class="grid-menu-item">
+          <a href="/"
+            on:click={(e) => { e.preventDefault(); setView('detail', '{bird.slug}', 1);}}>
+            <img src="{assetPath}images/menu-pics/{bird.slug}.jpg" alt="">
+            <h3>{bird.title}</h3>
+          </a>
+        </li>
+      {/each}
+
       <li class="grid-menu-item">
         <a href="/">
-          <img src="{assetPath}images/menu-pics/bluejay.jpg" alt="">
+          <img src="{assetPath}images/menu-pics/american-kestrel.jpg" alt="">
           <h3>Blue Jay</h3>
         </a>
       </li>
@@ -132,30 +142,7 @@
           <h3>Burrowing Owl</h3>
         </a>
       </li>
-      <li class="grid-menu-item">
-        <a href="/">
-          <img src="{assetPath}images/menu-pics/bluejay.jpg" alt="">
-          <h3>Blue Jay</h3>
-        </a>
-      </li>
-      <li class="grid-menu-item">
-        <a href="/">
-          <img src="{assetPath}images/menu-pics/bobolink.jpg" alt="">
-          <h3>Bobolink</h3>
-        </a>
-      </li>
-      <li class="grid-menu-item">
-        <a href="/">
-          <img src="{assetPath}images/menu-pics/blackcappedchickadee.jpg" alt="">
-          <h3>Black-capped Chickadee</h3>
-        </a>
-      </li>
-      <li class="grid-menu-item">
-        <a href="/">
-          <img src="{assetPath}images/menu-pics/barnowl.jpg" alt="">
-          <h3>Barn Owl</h3>
-        </a>
-      </li>
+
     </ul>
   </nav>
 </main>
