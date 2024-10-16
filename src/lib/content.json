@@ -13,7 +13,7 @@
     "sizeDescription": "9-12\" (23-30 cm)",
     "sizeOrdinal": "21",
     "colorOrdianl": "",
-    "range": "Nearly worldwide"
+    "range": "Found nearly worldwide but are rare in Maine, keeping to the southern tip of the state in York County"
   },
   {
     "slug": "blackburnian-warbler",
@@ -29,7 +29,7 @@
     "sizeDescription": "5\" (13 cm)",
     "sizeOrdinal": "4",
     "colorOrdianl": "",
-    "range": "The Blackburnian Warbler wide range that includes breeding grounds in northeastern North America and wintering grounds in Central and South America"
+    "range": "Summers in Northeastern North America and winters in South America; occasionally flies off course and visits Greenland, Iceland, and Scotland"
   },
   {
     "slug": "common-raven",
@@ -45,7 +45,7 @@
     "sizeDescription": "21-27\" (53-69 cm)",
     "sizeOrdinal": "34",
     "colorOrdianl": "",
-    "range": "Nearly worldwide"
+    "range": "Nearly worldwide; found in Maine year-round"
   }, 
   {
     "slug": "pileated-woodpecker",
@@ -61,23 +61,71 @@
     "sizeDescription": "17\" (43 cm)",
     "sizeOrdinal": "31",
     "colorOrdianl": "",
-    "range": "Northern Canada and much of the United States"
+    "range": "Northern Canada and much of the United States; seen in Maine year-round"
   },
   {
-    "slug": "",
-    "title": "",
-    "sciName": "",
+    "slug": "american-kestrel",
+    "title": "American Kestrel",
+    "sciName": "Falco sparverius",
     "labelPos": {"x": 0, "y": 0},
-    "description": "",
-    "habitat": "",
-    "food": "",
-    "nest": "",
-    "order": "",
-    "family": "",
-    "sizeDescription": "",
-    "sizeOrdinal": "",
+    "description": "Kestrels save food for lean times by hiding extra food it has killed in clumps of grass, tree roots and limbs, and bushes.",
+    "habitat": "Grasslands",
+    "food": "Small Animals",
+    "nest": "Cavity",
+    "order": "Falconiformes",
+    "family": "Falconiade",
+    "sizeDescription": "9-12\" (23-30 cm)",
+    "sizeOrdinal": "21",
     "colorOrdianl": "",
-    "range": ""
+    "range": "Alaska, Northern Canada, into the United States, Central Mexico, and the Caribbean; seen in Maine during the summer months"
+  }, 
+  {
+    "slug": "coopers-hawk",
+    "title": "Cooper's Hawk",
+    "sciName": "Accipiter cooperii",
+    "labelPos": {"x": 0, "y": 0},
+    "description": "Cooper Hawks are among the bird world's most skillful fliers. Their short, rounded wings allow them to fly through dense treetops at high speed in pursuit of other birds.",
+    "habitat": "Forests",
+    "food": "Birds",
+    "nest": "Tree",
+    "order": "Accipitriformes",
+    "family": "Accipitridae",
+    "sizeDescription": "14-18\" (36-45 cm)",
+    "sizeOrdinal": "26",
+    "colorOrdianl": "",
+    "range": "Southern Canada to Mexico: year-round residents in the southern half of Maine"
+  }, 
+  {
+    "slug": "ruffed-grouse",
+    "title": "Ruffed Grouse",
+    "sciName": "Bonasa umbellus",
+    "labelPos": {"x": 0, "y": 0},
+    "description": "To attract a mate or defend its territory, a male Ruffed Grouse will raise up its ruff, puff out its feathers, and beat its wings to create a rapid-fire drumming sound. Some say it sounds like an engine revving!",
+    "habitat": "Forests",
+    "food": "Omnivore",
+    "nest": "Ground",
+    "order": "Galliformes",
+    "family": "Phasianidae",
+    "sizeDescription": "16-19\", (41-48 cm)",
+    "sizeOrdinal": "27",
+    "colorOrdianl": "",
+    "range": "Forests from the Appalachian Mountains across Canada to Alaska; found in Maine woods year-round"
+  }, 
+  {
+    "slug": "redtailed-hawk",
+    "title": "Red-Tailed Hawk, juvenile ",
+    "sciName": "Buteo jamaicensis",
+    "labelPos": {"x": 0, "y": 0},
+    "description": "The Red-tailed Hawk is the most common hawk in North America. Look for them soaring above open fields, slowly circling or atop a telephone pole, eyes fixed on the ground, searching for a vole or rabbit.",
+    "habitat": "Forests",
+    "food": "Small Animals",
+    "nest": "Tree",
+    "order": "Accipitriformes",
+    "family": "Accipitridae",
+    "sizeDescription": "18-25\" (46-64 cm)",
+    "sizeOrdinal": "33",
+    "colorOrdianl": "",
+    "range": "Central Alaska, Canada, across the United States, into Mexico and Central America; seen in Maine during the summer, occasionally year-round"
   }, 
   {
     "slug": "",
@@ -94,6 +142,38 @@
     "sizeOrdinal": "",
     "colorOrdianl": "",
     "range": ""
+  },
+  {
+   "slug": "",
+   "title": "",
+   "sciName": "",
+   "labelPos": {"x": 0, "y": 0},
+   "description": "",
+   "habitat": "",
+   "food": "",
+   "nest": "",
+   "order": "",
+   "family": "",
+   "sizeDescription": "",
+   "sizeOrdinal": "",
+   "colorOrdianl": "",
+   "range": ""
+  }, 
+  {
+    "slug": "",
+    "title": "",
+    "sciName": "",
+    "labelPos": {"x": 0, "y": 0},
+    "description": "",
+    "habitat": "",
+    "food": "",
+    "nest": "",
+    "order": "",
+    "family": "",
+    "sizeDescription": "",
+    "sizeOrdinal": "",
+    "colorOrdianl": "",
+    "range": ""  
   }, 
   {
     "slug": "",
