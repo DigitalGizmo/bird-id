@@ -7,50 +7,17 @@
 <main class="grid-menu">
   <nav>
     <ul>
-      <li class="grid-menu-item">
-        <a href="/"
-          on:click={(e) => { e.preventDefault(); setView('detail', 'barn-owl', 1);}}>
-        <img src="{assetPath}images/menu-pics/barn-owl-1.jpg" alt="">
-          <h3>{content[0].title}</h3>
-        </a>
-      </li>
-      <li class="grid-menu-item">
-        <a href="/"
-          on:click={(e) => { e.preventDefault(); setView('detail', 'blackburnian-warbler', 1);}}>
-          <img src="{assetPath}images/menu-pics/blackburnian-warbler-1.jpg" alt="">
-          <h3>Blackburnian Warbler</h3>
-        </a>
-      </li>
-      <li class="grid-menu-item">
-        <a href="/"
-          on:click={(e) => { e.preventDefault(); setView('detail', 'common-raven', 1);}}>
-          <img src="{assetPath}images/menu-pics/common-raven-1.jpg" alt="">
-          <h3>Common Raven</h3>
-        </a>
-      </li>
-      <li class="grid-menu-item">
-        <a href="/"
-          on:click={(e) => { e.preventDefault(); setView('detail', 'pileated-woodpecker', 1);}}>
-          <img src="{assetPath}images/menu-pics/pileated-woodpecker-1.jpg" alt="">
-          <h3>Pileated Woodpecker</h3>
-        </a>
-      </li>
       {#each content as bird}
         <li class="grid-menu-item">
           <a href="/"
-            on:click={(e) => { e.preventDefault(); setView('detail', '{bird.slug}', 1);}}>
-            <img src="{assetPath}images/menu-pics/{bird.slug}.jpg" alt="">
+            on:click={(e) => { e.preventDefault(); setView('detail', bird.slug, 1);}}>
+            <img src="{assetPath}images/menu-pics/{bird.slug}-1.jpg" alt="">
             <h3>{bird.title}</h3>
           </a>
         </li>
       {/each}
 
-      <li class="grid-menu-item">
-        <a href="/">
-          <img src="{assetPath}images/menu-pics/american-kestrel.jpg" alt="">
-          <h3>Blue Jay</h3>
-        </a>
-      </li>
+      <!-- place holders -->
       <li class="grid-menu-item">
         <a href="/">
           <img src="{assetPath}images/menu-pics/bobolink.jpg" alt="">
