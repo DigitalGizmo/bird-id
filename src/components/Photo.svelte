@@ -29,12 +29,14 @@
 
   function showLabel(_slug) { 
     detailContent = content.find((element) => element.slug === _slug);
-    modalPosition.x = (detailContent.labelPos.x * svgHtmlRatio)-200;
-    modalPosition.y = (detailContent.labelPos.y * svgHtmlRatio)-100;
-
-    console.log('modalPosition x in show: ' + modalPosition.x);
-
-    isModalShowing = true;
+    if (detailContent) {
+      modalPosition.x = (detailContent.labelPos.x * svgHtmlRatio)-200;
+      modalPosition.y = (detailContent.labelPos.y * svgHtmlRatio)-100;
+      console.log('modalPosition x in show: ' + modalPosition.x);
+      isModalShowing = true;
+    } else {
+      alert(_slug + ' is not yet defined in data')
+    }
   };  
 </script>
 
