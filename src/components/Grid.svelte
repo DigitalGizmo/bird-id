@@ -38,12 +38,6 @@
       </li>
       <li class="grid-menu-item">
         <a href="/">
-          <img src="{assetPath}images/menu-pics/barnowl.jpg" alt="">
-          <h3>Barn Owl</h3>
-        </a>
-      </li>
-      <li class="grid-menu-item">
-        <a href="/">
           <img src="{assetPath}images/menu-pics/americanredstart.jpg" alt="">
           <h3>American Redstart</h3>
         </a>
@@ -72,44 +66,6 @@
           <h3>Bobolink</h3>
         </a>
       </li>
-      <li class="grid-menu-item">
-        <a href="/">
-          <img src="{assetPath}images/menu-pics/blackcappedchickadee.jpg" alt="">
-          <h3>Black-capped Chickadee</h3>
-        </a>
-      </li>
-      <li class="grid-menu-item">
-        <a href="/">
-          <img src="{assetPath}images/menu-pics/barnowl.jpg" alt="">
-          <h3>Barn Owl</h3>
-        </a>
-      </li>
-
-      <li class="grid-menu-item">
-        <a href="/">
-          <img src="{assetPath}images/menu-pics/barnowl.jpg" alt="">
-          <h3>Barn Owl</h3>
-        </a>
-      </li>
-      <li class="grid-menu-item">
-        <a href="/">
-          <img src="{assetPath}images/menu-pics/americanredstart.jpg" alt="">
-          <h3>American Redstart</h3>
-        </a>
-      </li>
-      <li class="grid-menu-item">
-        <a href="/">
-          <img src="{assetPath}images/menu-pics/crow.jpg" alt="">
-          <h3>Crow</h3>
-        </a>
-      </li>
-      <li class="grid-menu-item">
-        <a href="/">
-          <img src="{assetPath}images/menu-pics/burrowingowl.jpg" alt="">
-          <h3>Burrowing Owl</h3>
-        </a>
-      </li>
-
     </ul>
   </nav>
 </main>
