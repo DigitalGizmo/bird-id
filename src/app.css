@@ -20,7 +20,7 @@ header.top {
 header.top h1 {
 	color: #FFB802;
 	font-weight: 200;
-	font-size: 3.5em;
+	font-size: 5em;
 	font-stretch: 55%;
 	text-transform: uppercase;
 	margin: 0;
@@ -60,7 +60,8 @@ main.photo-menu div img {
 
 svg g#hotspots .hotspot {
   fill: #ff9700;
-  opacity: .3;
+/*  opacity: .3;*/
+	opacity: 0;
   stroke-width: 0px;
 }
 
