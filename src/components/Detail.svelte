@@ -44,7 +44,13 @@
             <img src="{assetPath}images/menu-pics/{detailSlug}-2.jpg"
           alt="bird name">
           </a>
-        </li>
+        </li> 
+<!--         <li> hi Don, we said we'd have up to four thumbs, didn't we?
+          <a href="/" on:click={(e) => { e.preventDefault(); setImageIdx(3);}}>
+            <img src="{assetPath}images/menu-pics/{detailSlug}-3.jpg"
+          alt="bird name">
+          </a>
+        </li> -->
       </ul>
 
       <p>{detailContent.description}</p>
