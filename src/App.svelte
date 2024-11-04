@@ -25,16 +25,20 @@
 </script>
 
 <header class="top">
-  <h1>Bird I.D.</h1>
-  <h2>Tap a bird to learn more</h2>
-
+  <div class="title">
+    <h1>Bird I.D.</h1>
+    <h2>Tap a bird to learn more</h2>
+  </div>
+  
   <div class="view-sort">
-    <p>View:
+    <p>Menu View</p>
+
     <a href="/" on:click={(e) => { e.preventDefault(); setView('photo');}}>
-      Photo</a> | 
+      <img src="{assetPath}icons/photo-icon.png" alt="photo menu icon">
+    </a>
     <a href="/" on:click={(e) => { e.preventDefault(); setView('grid');}}>
-      Grid </a>
-  </p>
+      <img src="{assetPath}icons/grid-icon.png" alt="grid menu icon">
+    </a>
   {#if view === 'grid'}
     <p>Sort by: Name | Size | Color</p>
   {/if}
