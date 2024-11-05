@@ -50,10 +50,12 @@
     <p>Menu View</p>
 
     <a href="/" on:click={(e) => { e.preventDefault(); setView('photo');}}>
-      <img src="{assetPath}icons/photo-icon.png" alt="bird display menu icon">
+      <img src="{assetPath}icons/photo-icon{currMenuView === 'photo' ? '-selected' : ''}.png" 
+      alt="bird display menu icon">
     </a>
     <a href="/" on:click={(e) => { e.preventDefault(); setView('grid');}}>
-      <img src="{assetPath}icons/grid-icon.png" alt="grid menu icon">
+      <img src="{assetPath}icons/grid-icon{currMenuView === 'grid' ? '-selected' : ''}.png" 
+      alt="grid menu icon">
     </a>
   {#if view === 'grid'}
     <p>Sort by: Name | Size | Color</p>
