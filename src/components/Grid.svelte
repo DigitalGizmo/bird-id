@@ -18,7 +18,4 @@
       {/each}
     </ul>
   </nav>
-  <a href="/" class="scroll-icon">
-    <img src="{assetPath}icons/scroll-arrow.png" alt="scroll down icon">
-  </a>
 </main>

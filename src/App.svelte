@@ -34,20 +34,20 @@
     {#if view === 'detail'}
       <h2>
         <a href="/" on:click={(e) => { e.preventDefault(); setView(currMenuView);}}>
-          &lt; Return
+          &larr; Return to menu
         </a>
       </h2>
     {:else}
       <h2>Tap a bird to learn more
       {#if view === 'grid'}
-        Scroll to see more ^
+        &nbsp;&nbsp;...&nbsp;&nbsp;Scroll to show more
       {/if}
     </h2>
     {/if}
   </div>
   
   <div class="view-sort">
-    <p>Menu View</p>
+    <p class="menu">Menu View:</p>
 
     <a href="/" on:click={(e) => { e.preventDefault(); setView('photo');}}>
       <img src="{assetPath}icons/photo-icon{currMenuView === 'photo' ? '-selected' : ''}.png" 

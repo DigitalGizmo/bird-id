@@ -32,10 +32,11 @@ header.top div.title h1 {
 }
 
 header.top div.title h2 {
-	font-weight: 200;
+	font-weight: 400;
 	font-size: 1.25em;
 	color: #FFF;
-	margin: -10px 0 0 0;
+	margin: -10px 0 0 6px;
+	text-transform: uppercase;
 }
 
 header.top div.view-sort {
@@ -46,16 +47,24 @@ header.top div.view-sort {
 }
 
 header.top div.view-sort img {
-	width:60px;
+	width: 80px;
+	margin-left: 6px
 }
 
 header.top div.view-sort p {
+	font-size: 1.15em;
 	margin: 0;
 	text-transform: uppercase;
 }
 
+header.top div.view-sort p.menu {
+	display: inline;
+	vertical-align: top;
+}
+
 header.top a {
 	color: #FFB802;
+	text-decoration: none;
 }
 
 /* ----- MENUS ------- */
@@ -181,7 +190,7 @@ div.info {
 	grid-template-columns: 50% 50%;
 	grid-gap: 20px;
 	height: 30vh;
-	padding: 6px 0 0 16px;
+	padding: 6px 20px 0 16px;
 }
 
 div.info article {/* image thumbs and description */
