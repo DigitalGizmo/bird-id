@@ -5,6 +5,7 @@
   import content from './lib/content.json'
 
   let view = 'photo';
+  let currMenuView = "photo";
   let detailSlug = 'americanredstart';
   let imageIdx = 0;
 
@@ -15,6 +16,9 @@
     detailSlug = _slug;
     setImageIdx(_imageIdx);
     view = _view;
+    if (view != "detail") {
+      currMenuView = view;
+    }
   }
 
   function setImageIdx(_idx) {
@@ -27,14 +31,26 @@
 <header class="top">
   <div class="title">
     <h1>Bird I.D.</h1>
-    <h2>Tap a bird to learn more</h2>
+    {#if view === 'detail'}
+      <h2>
+        <a href="/" on:click={(e) => { e.preventDefault(); setView(currMenuView);}}>
+          &lt; Return
+        </a>
+      </h2>
+    {:else}
+      <h2>Tap a bird to learn more
+      {#if view === 'grid'}
+        Scroll to see more ^
+      {/if}
+    </h2>
+    {/if}
   </div>
   
   <div class="view-sort">
     <p>Menu View</p>
 
     <a href="/" on:click={(e) => { e.preventDefault(); setView('photo');}}>
-      <img src="{assetPath}icons/photo-icon.png" alt="photo menu icon">
+      <img src="{assetPath}icons/photo-icon.png" alt="bird display menu icon">
     </a>
     <a href="/" on:click={(e) => { e.preventDefault(); setView('grid');}}>
       <img src="{assetPath}icons/grid-icon.png" alt="grid menu icon">
