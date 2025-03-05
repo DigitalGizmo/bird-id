@@ -12,7 +12,7 @@
     "family": "Tytonidae",
     "sizeDescription": "9-12\" (23-30 cm)",
     "sizeOrdinal": "21",
-    "colorOrdianl": "",
+    "colorCode": "27",
     "range": "Found nearly worldwide but are rare in Maine, keeping to the southern tip of the state in York County"
   },
   {
@@ -28,7 +28,7 @@
     "family": "Parulidae",
     "sizeDescription": "5\" (13 cm)",
     "sizeOrdinal": "4",
-    "colorOrdianl": "",
+    "colorCode": "1",
     "range": "Summers in Northeastern North America and winters in South America; occasionally flies off course and visits Greenland, Iceland, and Scotland"
   },
   {
@@ -44,7 +44,7 @@
     "family": "Corvidae",
     "sizeDescription": "21-27\" (53-69 cm)",
     "sizeOrdinal": "34",
-    "colorOrdianl": "",
+    "colorCode": "18",
     "range": "Nearly worldwide; found in Maine year-round"
   }, 
   {
@@ -60,7 +60,7 @@
     "family": "Picidae",
     "sizeDescription": "17\" (43 cm)",
     "sizeOrdinal": "31",
-    "colorOrdianl": "",
+    "colorCode": "16",
     "range": "Northern Canada and much of the United States; seen in Maine year-round"
   },
   {
@@ -76,7 +76,7 @@
     "family": "Falconiade",
     "sizeDescription": "9-12\" (23-30 cm)",
     "sizeOrdinal": "21",
-    "colorOrdianl": "",
+    "colorCode": "26",
     "range": "Alaska, Northern Canada, into the United States, Central Mexico, and the Caribbean; seen in Maine during the summer months"
   }, 
   {
@@ -92,7 +92,7 @@
     "family": "Accipitridae",
     "sizeDescription": "14-18\" (36-45 cm)",
     "sizeOrdinal": "26",
-    "colorOrdianl": "",
+    "colorCode": "24",
     "range": "Southern Canada to Mexico: year-round residents in the southern half of Maine"
   }, 
   {
@@ -108,7 +108,7 @@
     "family": "Phasianidae",
     "sizeDescription": "16-19\", (41-48 cm)",
     "sizeOrdinal": "27",
-    "colorOrdianl": "",
+    "colorCode": "21",
     "range": "Forests from the Appalachian Mountains across Canada to Alaska; found in Maine woods year-round"
   }, 
   {
@@ -124,7 +124,7 @@
     "family": "Accipitridae",
     "sizeDescription": "18-25\" (46-64 cm)",
     "sizeOrdinal": "33",
-    "colorOrdianl": "",
+    "colorCode": "22",
     "range": "Central Alaska, Canada, across the United States, into Mexico and Central America; seen in Maine during the summer, occasionally year-round"
   },
 {
@@ -140,7 +140,7 @@
     "family": "Corvidae",
     "sizeDescription": "16-21\" (40-53 cm",
     "sizeOrdinal": "30",
-    "colorOrdianl": "",
+    "colorCode": "17",
     "range": "Canada and the United States; found in Maine year-round"
   },
   {
@@ -156,7 +156,7 @@
    "family": "Strigidae",
    "sizeDescription": "7\" (18 cm)",
    "sizeOrdinal": "14",
-   "colorOrdianl": "",
+   "colorCode": "28",
    "range": "Southeast Alaska to Central Mexico, found in Maine year-round"
   }, 
   {
@@ -172,7 +172,7 @@
     "family": "Accipitridae",
     "sizeDescription": "10-14\" (25-36 cm)",
     "sizeOrdinal": "25",
-    "colorOrdianl": "",
+    "colorCode": "23",
     "range": "Forested areas in the Americas and some Caribbean islands; found in Maine year-round"  
   }, 
   {
@@ -188,7 +188,7 @@
     "family": "Picidae",
     "sizeDescription": "8.5\" (22 cm)",
     "sizeOrdinal": "18",
-    "colorOrdianl": "",
+    "colorCode": "15",
     "range": "Canada, and Northeastern United States; winters in Mexico and Central America"
   }, 
   {
@@ -204,7 +204,7 @@
     "family": "Phasianidae",
     "sizeDescription": "16-2\" (41-50 cm)",
     "sizeOrdinal": "28",
-    "colorOrdianl": "",
+    "colorCode": "19",
     "range": "Evergreen forests in Northern and Western North America; found in Central and Northern Maine woods year-round"
   }, 
   {
@@ -220,7 +220,7 @@
     "family": "Galliformes",
     "sizeDescription": "36-48\" (91 cm-1.2 m)",
     "sizeOrdinal": "35",
-    "colorOrdianl": "",
+    "colorCode": "20",
     "range": "From Southern Canada to Northern Mexico; in Maine year-round"      
   },
 {
@@ -236,7 +236,7 @@
     "family": "Scolopacidae",
     "sizeDescription": "10-12\" (25-30 cm)",
     "sizeOrdinal": "22",
-    "colorOrdianl": "",
+    "colorCode": "25",
     "range": "Found in young forests and shrub-filled fields across Eastern North America" 
   }, 
   {
@@ -252,7 +252,7 @@
     "family": "Anatidae",
     "sizeDescription": "18-22\" (47-55 cm)",
     "sizeOrdinal": "32",
-    "colorOrdianl": "",
+    "colorCode": "30",
     "range": "Year-round in the Southern United States and during summer throughout the United States and Southern Canada" 
   }, 
   {
@@ -268,7 +268,7 @@
     "family": "Picidae",
     "sizeDescription": "12\" (30 cm)",
     "sizeOrdinal": "24",
-    "colorOrdianl": "",
+    "colorCode": "29",
     "range": "The Northern Flicker is the most widespread woodpecker species in North America, found from Alaska to Central America" 
   }, 
   {
@@ -284,7 +284,7 @@
     "family": "Corvidae",
     "sizeDescription": "12\" (30 cm)",
     "sizeOrdinal": "23",
-    "colorOrdianl": "",
+    "colorCode": "11",
     "range": "Southern Canada to Florida and Texas in the United States; found in Maine year-round " 
   }, 
   {
@@ -300,7 +300,7 @@
     "family": "Turdidae",
     "sizeDescription": "5.5-7.5\" (14-19 cm)",
     "sizeOrdinal": "10",
-    "colorOrdianl": "",
+    "colorCode": "31",
     "range": "Forests across Canada, Southern Alaska, and the Northeastern and Western United States" 
   }, 
   {
@@ -316,7 +316,7 @@
     "family": "Cardinalidae",
     "sizeDescription": "7.5\" (19 cm)",
     "sizeOrdinal": "15",
-    "colorOrdianl": "",
+    "colorCode": "6",
     "range": "Found from the East Coast to Midwest United States during the summer and in tropical South American forests during the winter" 
   }, 
   {
@@ -332,7 +332,7 @@
     "family": "Icteridae",
     "sizeDescription": "6.5-8\" (17-22 cm)",
     "sizeOrdinal": "12",
-    "colorOrdianl": "",
+    "colorCode": "4",
     "range": "Central Alberta and Saskatchewan, Canada to South America; summer residents of Maine" 
   }, 
   {
@@ -347,7 +347,7 @@
     "family": "Bombycillidae",
     "sizeDescription": "6-7\" (15-18 cm)",
     "sizeOrdinal": "11",
-    "colorOrdianl": "",
+    "colorCode": "2",
     "range": "Throughout Canada, the United States, Mexico, Central America, and the Northwestern reaches of Colombia; often seen in Maine year-round" 
   }, 
   {
@@ -363,7 +363,7 @@
     "family": "Mimidae",
     "sizeDescription": "8-9\" (20-23 CM)",
     "sizeOrdinal": "17",
-    "colorOrdianl": "",
+    "colorCode": "34",
     "range": "Across Central, Eastern United States, and Southern Canada; wintering in Southern United States, Central America, and the Caribbean" 
   }, 
   {
@@ -379,7 +379,7 @@
     "family": "Cardinalidae",
     "sizeDescription": "7-9\" (18-23 cm)",
     "sizeOrdinal": "16",
-    "colorOrdianl": "",
+    "colorCode": "8",
     "range": "North and South America; seen across Maine in late-spring through early fall" 
   }, 
   {
@@ -395,7 +395,7 @@
     "family": "Parulidae",
     "sizeDescription": "4.5-5.5\" (11-14 cm)",
     "sizeOrdinal": "3",
-    "colorOrdianl": "",
+    "colorCode": "5",
     "range": "Summer residents of northeastern, central United States, and southern Canada; winter migration to Central America, South America, and the Caribbean" 
   }, 
   {
@@ -411,7 +411,7 @@
     "family": "Sittidae",
     "sizeDescription": "4.5-4.75\" (11-12 cm)",
     "sizeOrdinal": "1",
-    "colorOrdianl": "",
+    "colorCode": "13",
     "range": "Forests across Canada, Alaska, and the northeastern and western United States; found in Maine year-round" 
   }, 
   {
@@ -427,7 +427,7 @@
     "family": "Turdidae",
     "sizeDescription": "10\" (25 cm)",
     "sizeOrdinal": "20",
-    "colorOrdianl": "",
+    "colorCode": "9",
     "range": "Year-round residents in the United States; some birds migrate in the winter to warmer regions of the United States and Mexico" 
   }, 
   {
@@ -443,7 +443,7 @@
     "family": "Certhiidae",
     "sizeDescription": "5-5.75\" (13-15 cm)",
     "sizeOrdinal": "7",
-    "colorOrdianl": "",
+    "colorCode": "32",
     "range": "Throughout North America, from Alaska and Canada to northern Nicaragua; found in Maine year-round" 
   }, 
   {
@@ -459,7 +459,7 @@
     "family": "Turdidae",
     "sizeDescription": "7\" (17 cm)",
     "sizeOrdinal": "13",
-    "colorOrdianl": "",
+    "colorCode": "10",
     "range": "Forests across Canada, Alaska, and the northeastern and western United States; found in Maine year-round" 
   }, 
   {
@@ -475,7 +475,7 @@
     "family": "Paridae",
     "sizeDescription": "4.5-6\" (12-15 cm)",
     "sizeOrdinal": "5",
-    "colorOrdianl": "",
+    "colorCode": "14",
     "range": "Found year-round from New England to the West Coast into the southern half of Canada and into Alaska" 
   }, 
   {
@@ -491,7 +491,7 @@
     "family": "Troglodytidae",
     "sizeDescription": "4.5-5.25\" (11-13cm)",
     "sizeOrdinal": "2",
-    "colorOrdianl": "",
+    "colorCode": "33",
     "range": "The House Wren has one of the largest ranges of any songbird, from Canada to the tip of South America " 
   }, 
   {
@@ -507,7 +507,7 @@
     "family": "Fingillidae",
     "sizeDescription": "5.25-6.5\" (13-17 cm)",
     "sizeOrdinal": "8",
-    "colorOrdianl": "",
+    "colorCode": "3",
     "range": "Found in mature, coniferous forests, including spruce, fir, hemlock, and pine across Canada and the United States" 
   }, 
   {
@@ -523,7 +523,7 @@
     "family": "Fringillidae",
     "sizeDescription": "6-7\" (15-17 cm)",
     "sizeOrdinal": "9",
-    "colorOrdianl": "",
+    "colorCode": "7",
     "range": "Central Alaska to Newfoundland, and southwards to the northern parts of the United States." 
   }, 
   {
@@ -539,7 +539,7 @@
     "family": "Hirundinidae",
     "sizeDescription": "5-6.25\" (13-16 cm)",
     "sizeOrdinal": "6",
-    "colorOrdianl": "",
+    "colorCode": "12",
     "range": "From Alaska, Canada and much of the United States into Mexico" 
   }, 
   {
@@ -555,7 +555,7 @@
     "family": "Fringillidae",
     "sizeDescription": "8-10\" (20-25 cm)",
     "sizeOrdinal": "19",
-    "colorOrdianl": "",
+    "colorCode": "33",
     "range": "Canada and the Northern United States; found year-round in Northern Maine and in Southern  Maine in the winter" 
   }   
 ]
