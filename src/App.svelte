@@ -8,6 +8,7 @@
   let currMenuView = "photo";
   let detailSlug = 'americanredstart';
   let imageIdx = 0;
+  let sortOrder = 'name'; // Default sort order
 
   const assetPath = "https://assets.digitalgizmo.com/bird-id/";
   // const assetPath = "";
@@ -25,7 +26,11 @@
     imageIdx = _idx;
     // console.log(' setting idx to: ' + imageIdx);
   }
-
+  
+  // New function to handle sorting
+  function setSortOrder(_sortOrder) {
+    sortOrder = _sortOrder;
+  }
 </script>
 
 <header class="top">
@@ -58,7 +63,12 @@
       alt="grid menu icon">
     </a>
   {#if view === 'grid'}
-    <p>Sort by: Name | Size | Color</p>
+    <p>Sort by: 
+      <a href="/" class={sortOrder === 'name' ? 'active-sort' : ''} on:click={(e) => { e.preventDefault(); setSortOrder('name');}}>Name</a> | 
+      <a href="/" class={sortOrder === 'size' ? 'active-sort' : ''} on:click={(e) => { e.preventDefault(); setSortOrder('size');}}>Size</a> | 
+      <a href="/" class={sortOrder === 'size-desc' ? 'active-sort' : ''} on:click={(e) => { e.preventDefault(); setSortOrder('size-desc');}}>Size ↓</a> | 
+      <a href="/" class={sortOrder === 'color' ? 'active-sort' : ''} on:click={(e) => { e.preventDefault(); setSortOrder('color');}}>Color</a>
+    </p>
   {/if}
   </div>
 </header>
@@ -67,6 +77,7 @@
     assetPath = {assetPath}
     setView = {setView}
     content = {content}
+    sortOrder = {sortOrder}
   />
 {:else if view === 'photo'}
   <Photo 
@@ -84,4 +95,9 @@
   />
 {/if}
 
-
+<style>
+  .active-sort {
+    color: #FFB802;
+    font-weight: bold;
+  }
+</style>
