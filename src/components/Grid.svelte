@@ -2,11 +2,11 @@
   export let assetPath;
   export let setView;
   export let content;
-  export let sortOrder = 'name'; // Default to sorting by name
+  export let sortOrder = 'alphabetical'; // Default to alphabetical sorting
   
   // Function to sort content based on sortOrder
   $: sortedContent = [...content].sort((a, b) => {
-    if (sortOrder === 'name') {
+    if (sortOrder === 'alphabetical') {
       return a.title.localeCompare(b.title);
     } else if (sortOrder === 'size') {
       // Sort by size from smallest to largest

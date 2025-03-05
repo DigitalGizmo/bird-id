@@ -8,7 +8,7 @@
   let currMenuView = "photo";
   let detailSlug = 'americanredstart';
   let imageIdx = 0;
-  let sortOrder = 'name'; // Default sort order
+  let sortOrder = 'alphabetical'; // Default to alphabetical sorting
 
   const assetPath = "https://assets.digitalgizmo.com/bird-id/";
   // const assetPath = "";
@@ -64,8 +64,8 @@
     </a>
   {#if view === 'grid'}
     <p>Sort by: 
-      <a href="/" class={sortOrder === 'name' ? 'active-sort' : ''} on:click={(e) => { e.preventDefault(); setSortOrder('name');}}>Name</a> | 
-      <a href="/" class={sortOrder === 'size' ? 'active-sort' : ''} on:click={(e) => { e.preventDefault(); setSortOrder('size');}}>Size</a> | 
+      <a href="/" class={sortOrder === 'alphabetical' ? 'active-sort' : ''} on:click={(e) => { e.preventDefault(); setSortOrder('alphabetical');}}>Name</a> | 
+      <a href="/" class={sortOrder === 'size' ? 'active-sort' : ''} on:click={(e) => { e.preventDefault(); setSortOrder('size');}}>Size ↑</a> | 
       <a href="/" class={sortOrder === 'size-desc' ? 'active-sort' : ''} on:click={(e) => { e.preventDefault(); setSortOrder('size-desc');}}>Size ↓</a> | 
       <a href="/" class={sortOrder === 'color' ? 'active-sort' : ''} on:click={(e) => { e.preventDefault(); setSortOrder('color');}}>Color</a>
     </p>
