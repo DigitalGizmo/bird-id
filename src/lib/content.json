@@ -12,7 +12,7 @@
     "family": "Tytonidae",
     "sizeDescription": "9-12\" (23-30 cm)",
     "sizeOrdinal": "21",
-    "colorCode": "27",
+    "colorCode": "26",
     "range": "Found nearly worldwide but are rare in Maine, keeping to the southern tip of the state in York County"
   },
   {
@@ -76,7 +76,7 @@
     "family": "Falconiade",
     "sizeDescription": "9-12\" (23-30 cm)",
     "sizeOrdinal": "21",
-    "colorCode": "26",
+    "colorCode": "29",
     "range": "Alaska, Northern Canada, into the United States, Central Mexico, and the Caribbean; seen in Maine during the summer months"
   }, 
   {
@@ -156,7 +156,7 @@
    "family": "Strigidae",
    "sizeDescription": "7\" (18 cm)",
    "sizeOrdinal": "14",
-   "colorCode": "28",
+   "colorCode": "27",
    "range": "Southeast Alaska to Central Mexico, found in Maine year-round"
   }, 
   {
@@ -268,7 +268,7 @@
     "family": "Picidae",
     "sizeDescription": "12\" (30 cm)",
     "sizeOrdinal": "24",
-    "colorCode": "29",
+    "colorCode": "28",
     "range": "The Northern Flicker is the most widespread woodpecker species in North America, found from Alaska to Central America" 
   }, 
   {
@@ -363,7 +363,7 @@
     "family": "Mimidae",
     "sizeDescription": "8-9\" (20-23 CM)",
     "sizeOrdinal": "17",
-    "colorCode": "34",
+    "colorCode": "35",
     "range": "Across Central, Eastern United States, and Southern Canada; wintering in Southern United States, Central America, and the Caribbean" 
   }, 
   {
@@ -555,7 +555,7 @@
     "family": "Fringillidae",
     "sizeDescription": "8-10\" (20-25 cm)",
     "sizeOrdinal": "19",
-    "colorCode": "33",
+    "colorCode": "34",
     "range": "Canada and the Northern United States; found year-round in Northern Maine and in Southern  Maine in the winter" 
   }   
 ]
