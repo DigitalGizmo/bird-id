@@ -299,3 +299,9 @@ ul.behavior li.nest::before {
 	content: 'NEST: ';
 	color: #e6ad00;
 }
+
+.credit {
+	font-size: .75em;
+  color: gray;
+  margin-top: 6em !important;
+}

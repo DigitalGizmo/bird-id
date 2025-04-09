@@ -54,6 +54,7 @@
       </ul>
 
       <p>{detailContent.description}</p>
+      <p class="credit">Bird songs, calls, and photographs courtesy of the Macaulay Library, Cornell Lab of Ornithology.</p>
     </article>
 
     <section>
@@ -86,9 +87,3 @@
 
   </div><!--/detail-info--->
 </main>
-
-<style>
-  .audio {
-    width: 60px;
-  }
-</style>
