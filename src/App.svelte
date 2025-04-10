@@ -10,23 +10,44 @@
   let detailSlug = 'americanredstart';
   let imageIdx = 0;
   let sortOrder = 'alphabetical'; // Default to alphabetical sorting
+  let audio; // Audio instance
 
   const assetPath = "https://assets.digitalgizmo.com/bird-id/";
   // const assetPath = "";
 
+  // Function to play audio
+  function playSound() {
+    if (audio) {
+      audio.play();
+    }
+  }
+
+  // Function to stop audio
+  function stopSound() {
+    if (audio) {
+      audio.pause();
+      audio.currentTime = 0;
+    }
+  }
+
   // Update setView function to reset the timer whenever the view changes
   function setView(_view, _slug = 'bluejay', _imageIdx = 0) {
+    // Stop any playing audio when changing views
+    stopSound();
+    
     detailSlug = _slug;
     setImageIdx(_imageIdx);
     view = _view;
     if (view != "detail") {
       currMenuView = view;
+    } else {
+      // Create new audio instance when entering detail view
+      audio = new Audio(assetPath + 'audio/' + detailSlug + '.mp3');
     }
     
     // Reset the inactivity timer when the view changes
     resetInactivityTimer();
   }
-
 
   function setImageIdx(_idx) {
     imageIdx = _idx;
@@ -80,6 +101,7 @@
         window.removeEventListener(event, resetInactivityTimer, true);
       });
       clearTimeout(inactivityTimer);
+      stopSound(); // Make sure to stop audio when component is destroyed
     };
   });
 
@@ -144,6 +166,7 @@
     imageIdx = {imageIdx}
     setImageIdx = {setImageIdx}
     content = {content}
+    playSound = {playSound}
   />
 {/if}
 

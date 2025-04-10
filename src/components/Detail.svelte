@@ -4,13 +4,9 @@
   export let imageIdx;
   export let setImageIdx;
   export let content;
+  export let playSound; // Audio function from parent component
 
-  let audio = new Audio(assetPath + 'audio/' + detailSlug + '.mp3')
   let detailContent = content.find((element) => element.slug === detailSlug);
-
-  function playSound() {
-    audio.play();
-  }
 </script>
 
 <main class="detail">
