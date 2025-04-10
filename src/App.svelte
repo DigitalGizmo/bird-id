@@ -22,9 +22,29 @@
     }
   }
 
-  // Function to stop audio
+  // Function to stop audio with a fade out effect
   function stopSound() {
-    if (audio) {
+    if (audio && !audio.paused) {
+      const fadeOutDuration = 1000; // Duration of fade in milliseconds
+      const fadeOutInterval = 50; // How often to change volume (in milliseconds)
+      const originalVolume = audio.volume;
+      const steps = fadeOutDuration / fadeOutInterval;
+      const volumeStep = originalVolume / steps;
+      
+      // Create a fade out interval
+      const fadeOutTimer = setInterval(() => {
+        if (audio.volume > volumeStep) {
+          audio.volume -= volumeStep;
+        } else {
+          // Clear the interval and fully stop the audio
+          clearInterval(fadeOutTimer);
+          audio.pause();
+          audio.currentTime = 0;
+          audio.volume = originalVolume; // Reset volume for next play
+        }
+      }, fadeOutInterval);
+    } else if (audio) {
+      // If audio is already paused, just reset it
       audio.pause();
       audio.currentTime = 0;
     }
