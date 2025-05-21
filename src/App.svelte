@@ -10,59 +10,72 @@
   let detailSlug = 'americanredstart';
   let imageIdx = 0;
   let sortOrder = 'alphabetical'; // Default to alphabetical sorting
-  let audio; // Audio instance
+  let audio = null; // Audio instance
 
   const assetPath = "https://assets.digitalgizmo.com/bird-id/";
   // const assetPath = "";
 
   // Function to play audio
   function playSound() {
-    if (audio) {
-      audio.play();
+    // Create a new audio instance each time to avoid state issues
+    audio = new Audio(assetPath + 'audio/' + detailSlug + '.mp3');
+      
+    // Add event listeners to track when audio ends
+    audio.addEventListener('ended', () => {
+      audio.currentTime = 0;
+    });
+      
+    // Set volume and play
+    audio.volume = 1.0;
+      
+    // Use a promise to handle play() since it returns a promise on modern browsers
+    const playPromise = audio.play();
+      
+    // Handle potential play() promise rejection (common in iOS)
+    if (playPromise !== undefined) {
+      playPromise.catch(error => {
+        console.log("Audio play failed:", error);
+      });
     }
   }
 
-  // Function to stop audio with a fade out effect
-  function stopSound() {
+  // Function to stop audio - more compatible approach
+  function stopSound(immediate = false) {
     if (audio && !audio.paused) {
-      const fadeOutDuration = 1000; // Duration of fade in milliseconds
-      const fadeOutInterval = 50; // How often to change volume (in milliseconds)
-      const originalVolume = audio.volume;
-      const steps = fadeOutDuration / fadeOutInterval;
-      const volumeStep = originalVolume / steps;
+      if (immediate) {
+        // Force immediate stop - more reliable on iOS
+        audio.pause();
+        audio.currentTime = 0;
+        return;
+      }
       
-      // Create a fade out interval
-      const fadeOutTimer = setInterval(() => {
-        if (audio.volume > volumeStep) {
-          audio.volume -= volumeStep;
-        } else {
-          // Clear the interval and fully stop the audio
-          clearInterval(fadeOutTimer);
+      try {
+        // Simple approach that should work on iOS
+        // Instead of trying to fade out (which can be problematic on iOS),
+        // we'll just pause after a short delay to give a sense of completion
+        setTimeout(() => {
           audio.pause();
           audio.currentTime = 0;
-          audio.volume = originalVolume; // Reset volume for next play
-        }
-      }, fadeOutInterval);
-    } else if (audio) {
-      // If audio is already paused, just reset it
-      audio.pause();
-      audio.currentTime = 0;
+        }, 300);
+      } catch (e) {
+        // Fallback if the above fails
+        console.log("Error stopping audio:", e);
+        audio.pause();
+        audio.currentTime = 0;
+      }
     }
   }
 
   // Update setView function to reset the timer whenever the view changes
   function setView(_view, _slug = 'bluejay', _imageIdx = 0) {
     // Stop any playing audio when changing views
-    stopSound();
+    stopSound(true);
     
     detailSlug = _slug;
     setImageIdx(_imageIdx);
     view = _view;
     if (view != "detail") {
       currMenuView = view;
-    } else {
-      // Create new audio instance when entering detail view
-      audio = new Audio(assetPath + 'audio/' + detailSlug + '.mp3');
     }
     
     // Reset the inactivity timer when the view changes
@@ -80,7 +93,7 @@
   }
 
   /* ---- Timeout code ----*/
-  let timeoutDuration = 60000; // 120000 2 minutes (in milliseconds)
+  let timeoutDuration = 60000; // 60000 = 1 minute (in milliseconds)
   let inactivityTimer;
 
   function resetInactivityTimer() {
@@ -95,7 +108,6 @@
       }, timeoutDuration);
     }
   }
-
 
   // Need to track user activity to reset the timer
   function setupActivityTracking() {
@@ -121,7 +133,7 @@
         window.removeEventListener(event, resetInactivityTimer, true);
       });
       clearTimeout(inactivityTimer);
-      stopSound(); // Make sure to stop audio when component is destroyed
+      stopSound(true); // Force immediate audio stop when component is destroyed
     };
   });
 

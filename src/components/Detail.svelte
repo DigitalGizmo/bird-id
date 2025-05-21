@@ -4,7 +4,7 @@
   export let imageIdx;
   export let setImageIdx;
   export let content;
-  export let playSound; // Audio function from parent component
+  export let playSound;
 
   let detailContent = content.find((element) => element.slug === detailSlug);
 </script>
@@ -17,7 +17,7 @@
 
   <div class="full-view">
     <img src="{assetPath}images/full-pics/{detailSlug}-{imageIdx}.jpg"
-    alt="bird name">
+    alt="{detailContent.title}">
   </div>
 
   <div class="info">
@@ -26,27 +26,21 @@
         <li>
           <a href="/" on:click={(e) => { e.preventDefault(); setImageIdx(0);}}>
             <img src="{assetPath}images/menu-pics/{detailSlug}-0.jpg"
-            alt="bird name">
+            alt="{detailContent.title} thumbnail 1">
           </a>
         </li>
         <li>
           <a href="/" on:click={(e) => { e.preventDefault(); setImageIdx(1);}}>
             <img src="{assetPath}images/menu-pics/{detailSlug}-1.jpg"
-          alt="bird name">
+          alt="{detailContent.title} thumbnail 2">
             </a>
         </li>
         <li>
           <a href="/" on:click={(e) => { e.preventDefault(); setImageIdx(2);}}>
             <img src="{assetPath}images/menu-pics/{detailSlug}-2.jpg"
-          alt="bird name">
+          alt="{detailContent.title} thumbnail 3">
           </a>
-        </li> 
-<!--         <li> hi Don, we said we'd have up to four thumbs, didn't we?
-          <a href="/" on:click={(e) => { e.preventDefault(); setImageIdx(3);}}>
-            <img src="{assetPath}images/menu-pics/{detailSlug}-3.jpg"
-          alt="bird name">
-          </a>
-        </li> -->
+        </li>
       </ul>
 
       <p>{detailContent.description}</p>
@@ -57,7 +51,7 @@
       <div class="audio">
         <a href="/" on:click={(e) => { e.preventDefault(); playSound();}}>
           <img src="{assetPath}icons/audio-icon.png"
-          alt="bird song">
+          alt="Play bird song">
           <span class="">Listen</span>
         </a>
       </div>
