@@ -123,9 +123,10 @@ svg g#hotspots .hotspot {
 /* GRID MENU */
 main.grid-menu {
 	background-color: #323024;
-	position: relative;
 	overflow-x: hidden;
 	overflow-y: scroll;
+	scroll-behavior: smooth;
+	/*scroll-snap: none;*/
 	margin-top: 10vh;
 }
 
@@ -177,6 +178,7 @@ li.grid-menu-item h3 {
 /* ----- DETAIL PAGE ------ */
 main.detail {
 	overflow: hidden;
+	margin-top: 10vh;
 }
 
 main.detail header {
@@ -208,7 +210,7 @@ div.info {
 	display: grid;
 	grid-template-columns: 50% 50%;
 	grid-gap: 20px;
-	height: 30vh;
+	height: 33vh;
 	padding: 6px 20px 0 16px;
 }
 
@@ -323,9 +325,8 @@ ul.behavior li.nest::before {
 
 .credit {
 	font-size: .75em;
-  color: gray;
+  color: #b0b0b0;
   position: absolute;
-  bottom: 0px;
+  bottom: 5px;
   left: 0;
-  /*margin-top: 6em !important;*/
 }
