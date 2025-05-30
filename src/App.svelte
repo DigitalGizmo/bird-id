@@ -93,7 +93,7 @@
   }
 
   /* ---- Timeout code ----*/
-  let timeoutDuration = 60000; // 60000 = 1 minute (in milliseconds)
+  let timeoutDuration = 120000; // 60000 = 1 minute (in milliseconds)
   let inactivityTimer;
 
   function resetInactivityTimer() {
