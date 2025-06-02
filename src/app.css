@@ -128,6 +128,12 @@ main.grid-menu {
 	scroll-behavior: smooth;
 	/*scroll-snap: none;*/
 	margin-top: 10vh;
+
+  /* iOS Safari fixes */
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior: contain;
+  height: 90vh; /* Ensure fixed height */
+  position: relative;  
 }
 
 main.grid-menu nav ul {
