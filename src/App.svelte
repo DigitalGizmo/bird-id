@@ -12,7 +12,7 @@
   let sortOrder = 'alphabetical'; // Default to alphabetical sorting
   let audio = null; // Audio instance
 
-  const assetPath = "https://assets.digitalgizmo.com/bird-id/";
+   const assetPath = "https://assets.digitalgizmo.com/bird-id/";
   // const assetPath = "";
 
   // Function to play audio
