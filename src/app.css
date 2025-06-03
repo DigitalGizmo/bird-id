@@ -9,13 +9,13 @@ body {
   max-height: 100vh;
 }
 
-/*header.top {
-	background-color: black;
-	display: grid;
-	grid-template-columns: 50% 50%;
-	grid-template-rows: 10vh;
-	grid-gap: 20px;
-}*/
+@font-face {
+  font-family: 'Noto Sans';
+  src: url('/fonts/NotoSans-VariableFont_wdth,wght.ttf') format('truetype');
+  font-stretch: 25% 150%;
+  font-style: oblique 0deg 10deg;
+  font-weight: 100 900;
+}
 
 header.top {
 	background-color: black;
