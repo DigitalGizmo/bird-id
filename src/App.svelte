@@ -12,8 +12,8 @@
   let sortOrder = 'alphabetical'; // Default to alphabetical sorting
   let audio = null; // Audio instance
 
-  // const assetPath = "https://assets.digitalgizmo.com/bird-id/";
-const assetPath = "";
+  const assetPath = "https://assets.digitalgizmo.com/bird-id/";
+  // const assetPath = "";
 
   // Function to play audio
   function playSound() {
@@ -151,7 +151,7 @@ const assetPath = "";
     {:else}
       <h2>Tap a bird to learn more
       {#if view === 'grid'}
-        &nbsp;&nbsp;...&nbsp;&nbsp;Scroll to show more
+         ... Scroll for more
       {/if}
     </h2>
     {/if}
