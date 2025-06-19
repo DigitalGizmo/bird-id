@@ -257,10 +257,10 @@
   }, 
   {
     "slug": "northern-flicker",
-    "title": "Northern (Yellow Shafted) Flicker",
+    "title": "Northern Flicker",
     "sciName": "Colaptes auratus",
     "labelPos": {"x": 1010, "y": 1530},
-    "description": "The Northern Flicker can climb up tree trunks and hammer on wood like other woodpeckers, but it prefers to find food on the ground. Ants are a favorite, and the Flicker digs in the dirt to find them and then slurps them up, using its long, barbed tongue.",
+    "description": "The Northern Flicker is also known as the Yellow-shafted Flicker. It can climb up tree trunks like other woodpeckers, but it prefers to find food on the ground. Ants are a favorite, and the Flicker digs in the dirt and slurps them up, using its long, barbed tongue.",
     "habitat": "Open Woodlands",
     "food": "Insects",
     "nest": "Cavity",
